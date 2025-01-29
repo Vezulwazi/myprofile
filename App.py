@@ -5,9 +5,9 @@ import pandas as pd
 st.title("Researcher Profile Page")
 
 # Collect basic information
-name = "Dr. Jane Doe"
-field = "Astrophysics"
-institution = "University of Science"
+name = "Denzel Muwanazi"
+field = "BSc Honours Computer Science AI"
+institution = "University of Johannesburg"
 
 # Display basic profile information
 st.header("Researcher Overview")
@@ -45,5 +45,5 @@ if uploaded_file:
 
 # Add a contact section
 st.header("Contact Information")
-email = "jane.doe@example.com"
+email = "denzel.muwanazi@gmail.com.com"
 st.write(f"You can reach {name} at {email}.")
