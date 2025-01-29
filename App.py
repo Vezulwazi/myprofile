@@ -8,12 +8,18 @@ st.title("Researcher Profile Page")
 name = "Denzel Muwanazi"
 field = "BSc Honours Computer Science AI"
 institution = "University of Johannesburg"
+phone_number = "+27 062 081 3001"
+linkedin_url = "www.linkedin.com/in/denzel-muwanazi"
+github_url = "https://github.com/Vezulwaz"
 
 # Display basic profile information
 st.header("Researcher Overview")
 st.write(f"**Name:** {name}")
 st.write(f"**Field of Research:** {field}")
 st.write(f"**Institution:** {institution}")
+st.write(f"**Phone Number:** {phone_number}")
+st.write(f"**LinkedIn:** [Visit LinkedIn](linkedin_url)")
+st.write(f"**GitHub:** [Visit GitHub](github_url)")
 
 # Add a section for publications
 st.header("Publications")
@@ -29,7 +35,8 @@ if uploaded_file:
         filtered = publications[
             publications.apply(lambda row: keyword.lower() in row.astype(str).str.lower().values, axis=1)
         ]
-        st.write(f"Filtered Results for '{keyword}':")
+        st.write(f"Filtered Results for '{keyword}':
+                st.write(f"Filtered Results for '{keyword}':")
         st.dataframe(filtered)
     else:
         st.write("Showing all publications")
@@ -45,5 +52,7 @@ if uploaded_file:
 
 # Add a contact section
 st.header("Contact Information")
-email = "denzel.muwanazi@gmail.com.com"
+email = "denzel.muwanazi@gmail.com"
 st.write(f"You can reach {name} at {email}.")
+
+
