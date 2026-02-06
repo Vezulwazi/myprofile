@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -63,9 +61,6 @@ if section == "Profile":
         with a growing interest in **cybersecurity, data privacy, and risk management**.
         I am experienced in handling **sensitive datasets**, building **analytical tools in Python**,
         and operating within **structured, compliance-driven environments**.
-
-        I am a strong communicator with proven ability to support **multiple projects**,
-        document processes clearly, and collaborate effectively in **hybrid and remote teams**.
         """)
 
     st.markdown("---")
@@ -75,101 +70,90 @@ if section == "Profile":
     m2.metric("Planned MSc", "2026")
     m3.metric("Core Focus", "Data & Research")
 
-    # ---------------- EDUCATION ----------------
     st.markdown("### 🎓 Education")
     st.markdown("""
-    - **BSc Honours in Physics** – North-West University  
-    - **BSc in Physics & Computer Science** – North-West University  
+    - **BSc Honours in Physics** – North-West University (2025)  
+    - **BSc in Physics & Computer Science** – North-West University (2024)  
     - **Planned MSc in Physics (2026)** – North-West University  
     """)
 
-    # ---------------- TECHNICAL SKILLS ----------------
     st.markdown("### 🛠 Technical Skills")
-
     st.markdown("""
-    **Programming & Data**
-    - Python (data analysis, automation, scripting)
-    - SQL (basic querying and data handling)
-    - Data cleaning, validation, and reporting
+    **Programming & Data**  
+    - Python (data analysis, automation, scripting)  
+    - SQL (basic querying and data handling)  
+    - Data cleaning, validation, and reporting  
 
-    **Data Visualisation & Tools**
-    - Microsoft Excel (advanced formulas, analysis)
-    - Power BI (basic dashboards and reporting)
-    - Microsoft 365 (Word, PowerPoint, Teams)
+    **Data Visualisation & Tools**  
+    - Microsoft Excel (advanced formulas, analysis)  
+    - Power BI (basic dashboards and reporting)  
+    - Microsoft 365 (Word, PowerPoint, Teams)  
 
-    **Security & Governance Exposure**
-    - Data privacy principles (confidentiality, integrity, access control)
-    - Risk identification and mitigation
-    - Audit-style documentation and reporting
-    - Role-based access and least-privilege concepts
-    """)
-
-    # ---------------- PROJECTS ----------------
-    st.markdown("### 🧪 Academic & Technical Projects")
-
-    st.markdown("""
-    **Astrophysics Data Analysis Project**
-    - Processed and analysed large observational datasets using Python
-    - Applied strict data validation and integrity checks
-    - Documented methodologies and results for academic review
-    - Worked within ethical and governance frameworks for research data
-
-    **Python-Based Application / Chatbot Project**
-    - Developed a Python application to process structured user input
-    - Implemented logical controls to manage data flow and usage
-    - Produced technical documentation for maintainability
-    - Collaborated in a feedback-driven development environment
-    """)
-
-    # ---------------- EXPERIENCE ----------------
-    st.markdown("### 💼 Experience")
-
-    st.markdown("""
-    **Supplemental Instruction (SI) Facilitator – North-West University**
-    - Delivered structured training sessions to diverse student groups
-    - Communicated complex technical concepts clearly and effectively
-    - Supported academic programs through reporting and coordination
-    - Reinforced awareness of academic standards, policies, and compliance
-    """)
-
-    # ---------------- PROFESSIONAL SKILLS ----------------
-    st.markdown("### 🤝 Professional Skills")
-
-    st.markdown("""
-    - Time management and prioritisation  
-    - Stakeholder communication  
-    - Documentation and reporting  
-    - Remote and hybrid collaboration  
-    - Process improvement mindset  
-    - High attention to detail and integrity  
-    """)
-
-    # ---------------- ADDITIONAL INFO ----------------
-    st.markdown("### ℹ️ Additional Information")
-
-    st.markdown("""
-    - South African Citizen  
-    - Eligible for **2026 Graduate Programmes**  
-    - Strong interest in **cybersecurity, data privacy, and risk management**  
+    **Security & Governance Exposure**  
+    - Data privacy principles  
+    - Risk identification and mitigation  
+    - Audit-style documentation  
+    - Role-based access and least-privilege concepts  
     """)
 
 # ---------------- PUBLICATIONS ----------------
 elif section == "Publications":
 
-    st.header("📄 Publications")
-    uploaded_file = st.file_uploader("Upload Publications CSV", type="csv")
+    st.header("📄 Research & Publications")
 
-    if uploaded_file:
-        df = pd.read_csv(uploaded_file)
-        st.dataframe(df, use_container_width=True)
-    else:
-        st.info("No publications uploaded yet.")
+    st.subheader("Honours Research Project")
+    st.markdown("""
+    **Title:** Astrophysical Data Analysis of Star Clusters  
+    **Supervisor:** Prof. Markus Böttcher – North-West University  
+
+    **Research Summary:**  
+    This project focused on analysing astronomical observational datasets using Python.
+    The study involved cleaning, validating, and statistically analysing photometric data
+    from star clusters to determine cluster properties such as age, distance, and stellar
+    distributions. Strict data integrity and documentation practices were applied throughout
+    the research to ensure reproducibility and compliance with academic research standards.
+
+    **Key Contributions:**
+    - Developed Python scripts for automated data cleaning and validation
+    - Generated colour-magnitude diagrams (CMDs) and performed isochrone fitting
+    - Analysed stellar population distributions
+    - Produced structured research documentation and reporting
+    """)
+
+    st.subheader("Conference & Report Outputs")
+    st.markdown("""
+    - Honours Research Dissertation (2025)
+    - Internal departmental research presentations
+    """)
 
 # ---------------- PROJECTS ----------------
 elif section == "Projects":
 
-    st.header("🧪 Projects Overview")
-    st.info("See detailed project descriptions in the Profile section.")
+    st.header("🧪 Academic & Technical Projects")
+
+    st.markdown("""
+    ### Astrophysics Data Analysis Project
+    - Processed large observational datasets using Python
+    - Applied statistical modelling techniques
+    - Performed error analysis and uncertainty estimation
+    - Generated professional scientific reports
+
+    ### Python-Based Application / Chatbot Project
+    - Built a Python application using NLP libraries
+    - Designed logical control flows for structured conversations
+    - Implemented data validation and logging
+    - Produced technical documentation
+
+    ### Research Data Governance Project
+    - Implemented structured data management workflows
+    - Ensured compliance with academic data governance standards
+    - Developed reporting frameworks
+
+    ### Personal Data Science Portfolio
+    - Data analysis dashboards using Streamlit
+    - Python automation tools
+    - Statistical modelling notebooks
+    """)
 
 # ---------------- ANALYTICS ----------------
 elif section == "Research Analytics":
